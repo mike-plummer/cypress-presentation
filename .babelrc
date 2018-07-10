@@ -1,0 +1,15 @@
+{
+  "presets": [
+    ["@babel/preset-env", {"modules": false}],
+    ["@babel/preset-stage-2", {"decoratorsLegacy": true}],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    ["prismjs", {
+      "languages": ["javascript", "json", "jsx", "typescript", "tsx"],
+      "plugins": ["normalize-whitespace", "keep-markup", "unescaped-markup", "line-numbers"],
+      "theme": "okaidia",
+      "css": true
+    }]
+  ]
+}

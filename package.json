@@ -1,0 +1,70 @@
+{
+  "name": "@mike-plummer/cypress-presentation",
+  "private": true,
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "Mike Plummer",
+  "license": "MIT",
+  "scripts": {
+    "precommit": "pretty-quick --staged",
+    "prebuild": "del-cli \"dist/**/*\"",
+    "build": "cross-env NODE_ENV=production webpack --env.environment",
+    "start": "cross-env NODE_ENV=development webpack-dev-server",
+    "test": "echo \"We should probably write some tests\""
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.52",
+    "@babel/polyfill": "^7.0.0-beta.52",
+    "@babel/preset-env": "^7.0.0-beta.52",
+    "@babel/preset-react": "^7.0.0-beta.52",
+    "@babel/preset-stage-2": "^7.0.0-beta.52",
+    "@types/prismjs": "^1.9.0",
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "@types/react-icons": "^2.2.5",
+    "@types/webpack-env": "^1.13.6",
+    "autoprefixer": "~8.6.5",
+    "awesome-typescript-loader": "^5.2.0",
+    "babel-loader": "8.0.0-beta.4",
+    "babel-plugin-prismjs": "^1.0.2",
+    "copy-webpack-plugin": "~4.5.2",
+    "cross-env": "~5.2.0",
+    "css-loader": "~1.0.0",
+    "cssnano": "3.10.0",
+    "del-cli": "~1.1.0",
+    "dotenv": "~6.0.0",
+    "file-loader": "~1.1.11",
+    "html-loader": "~0.5.5",
+    "html-webpack-plugin": "~3.2.0",
+    "husky": "~0.14.3",
+    "is-equal-regex": "~0.1.0",
+    "markdown-loader": "~3.0.0",
+    "mdx-loader": "~1.1.0",
+    "mdxc": "~1.1.1",
+    "mini-css-extract-plugin": "~0.4.1",
+    "postcss-loader": "~2.1.5",
+    "prettier": "~1.13.7",
+    "pretty-quick": "~1.6.0",
+    "pug-html-loader": "~1.1.5",
+    "style-loader": "~0.21.0",
+    "typescript": "2.8.3",
+    "url-loader": "~1.0.1",
+    "webpack": "~4.15.1",
+    "webpack-cli": "~3.0.8",
+    "webpack-dev-server": "~3.1.4"
+  },
+  "dependencies": {
+    "@objectpartners/revealjs-theme": "~0.0.3",
+    "prismjs": "~1.15.0",
+    "react": "~16.4.1",
+    "react-dom": "~16.4.1",
+    "react-icons": "~2.2.7",
+    "react-live": "~1.10.1",
+    "reveal.js": "~3.6.0"
+  },
+  "workspaces": {
+    "nohoist": [
+      "reveal.js"
+    ]
+  }
+}
