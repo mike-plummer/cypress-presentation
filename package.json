@@ -10,7 +10,8 @@
     "prebuild": "del-cli \"dist/**/*\"",
     "build": "cross-env NODE_ENV=production webpack --env.environment",
     "start": "cross-env NODE_ENV=development webpack-dev-server",
-    "test": "echo \"We should probably write some tests\""
+    "test": "echo \"We should probably write some tests\"",
+    "deploy": "yarn build && gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.52",
@@ -34,6 +35,7 @@
     "del-cli": "~1.1.0",
     "dotenv": "~6.0.0",
     "file-loader": "~1.1.11",
+    "gh-pages": "^1.2.0",
     "html-loader": "~0.5.5",
     "html-webpack-plugin": "~3.2.0",
     "husky": "~0.14.3",
