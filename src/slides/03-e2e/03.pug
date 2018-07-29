@@ -1,12 +1,7 @@
-h2 Organizing Tests
-
-p Typically tests either:
-
+h2 Common Problems
 ol
-  li.fragment Test a single flow, start to finish
-    ul
-      li Login/Logout
-      li  Step through a wizard
-  li.fragment Test all states of a single element
-    ul
-      li Validate submit button for a form
+  li.fragment Require manual intervention (kickoff, special environment, data reset)
+  li.fragment Non-idempotent
+  li.fragment Interdependent
+  li.fragment External dependencies (data, auth)
+  li.fragment Cross-browser compatibility
